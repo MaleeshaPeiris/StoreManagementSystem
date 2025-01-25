@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<!-- Student No:104081177
+Name: Maleesha Peiris
+lets the managers log into the system-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="mlogin.js"></script>
+    <meta name="description" content="manager login" />
+    <title>Manager Login</title>
+</head>
+<body>
+    <body>
+        <h1>BuyOnline Manager Login</h1>
+         <div id="links" style="display: none;">
+            <a href="listing.htm">Listing Page</a><br><br>
+            <a href="processing.htm">Processing Page</a><br><br>
+            <a href="logout.htm">Log Out</a>
+        </div> 
+        <form id="loginForm" style="display: block;">
+            <label for="manager_id">Manager ID:</label>
+            <input type="text" name="manager_id" id="manager_id" required><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required><br>
+            <input type="button" value="Login" onclick="loadDoc()">
+        </form>
+        <p id="error_message"></p>
+
+</body>
+</html>
+
+
+
+
+
+

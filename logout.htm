@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<!-- Student No:104081177
+Name: Maleesha Peiris
+gives the louout message to the user-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            var xhr = false;
+            if (window.XMLHttpRequest) {
+                xhr = new XMLHttpRequest();
+            }
+            else if (window.ActiveXObject) {
+                xhr = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+
+            xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                document.getElementById('logout_message').innerHTML = xhr.responseText;
+            
+            }
+            };
+            xhr.open("GET", "logout.php", true);
+            xhr.send();
+        </script>
+        <meta name="description" content="system logout" />
+        <title>logout</title>
+    </head>
+    <body>
+        <h1>Logging Out</h1>
+        <p id="logout_message"></p>
+        <a href="https://mercury.swin.edu.au/cos80021/s104081177/Project2/buyonline.htm">Back</a><br/> <br/> <br/> 
+    </body>
+</html>
+
+
+
+
+
+

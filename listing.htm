@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Student No:104081177
+Name: Maleesha Peiris
+lets the manager add items to the catalogue-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="new customer registration" />
+	<meta name="keywords" content="HTML, JavaScript, PHP, ajax, XML, XSLT" />
+	<script type="text/javascript" src="listing.js"></script>
+	<title>Listing Items</title>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="links" style="display: block;">
+        <a href="listing.htm">Listing Page</a>
+        <a href="processing.htm">Processing Page</a>
+        <a href="logout.htm">Log Out</a>
+    </div> 
+    <h1>Add New Item</h1>
+    <table style="width:50%">
+        <tr>
+            <th>Item Name</th>
+            <td>
+                <textarea name="itemname" id="itemname"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <th>Item Price</th>
+            <td>
+                <textarea name="itemprice" id="itemprice"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <th>Item Quantity</th>
+            <td>
+                <textarea name="itemquantity" id="itemquantity"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <th>Item Description</th>
+            <td>
+                <textarea name="itemdescription" id="itemdescription"></textarea>               
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="addItem();">Add Item</button>
+            </td>
+            <td>
+                <button onclick="reset();">Reset</button>
+            </td>
+        </tr>
+    </table>
+    <p id="msg"></p>
+</body>
+</html>
